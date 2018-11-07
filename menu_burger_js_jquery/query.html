@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" 
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" 
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/query.css">
+</head>
+<body>
+        <nav>
+                <div class="menu-bars">
+                  <i class="fas fa-bars fa-2x"></i>  
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">jQuery</a></li>
+                  <li><a href="#">Script</a></li>
+                  <li><a href="#">Net</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous">
+</script>
+<script>
+$(document).ready(function(){
+  $(".menu-bars").on("click", function(){
+    $("nav ul").toggleClass("showing");
+  });
+
+  $("nav ul li").on("click", function(){
+    $("nav ul").removeClass("showing");
+  });
+});
+</script>
+
+</body>
+</html>

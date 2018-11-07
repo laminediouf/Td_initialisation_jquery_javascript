@@ -58,7 +58,6 @@
     </div>
 
     <div class="contenu_onglets">
-
         <div class="contenu_onglet" id="contenu_onglet_quoi">
             <h1>Bonjour accueil</h1>
         </div>
